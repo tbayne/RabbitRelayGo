@@ -1,0 +1,9 @@
+<seelog minlevel="trace" maxlevel="critical">
+	<outputs formatid="sw1">
+		<rollingfile type="size" filename="./rabbitrelay.log" maxsize="1000000" maxrolls="50" />
+	</outputs>
+
+	<formats>
+		<format id="sw1" format="[%LEV] (%Date %Time) [%File:%Func] %Msg%n"/>
+	</formats>
+</seelog>
